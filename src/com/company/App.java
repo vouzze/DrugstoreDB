@@ -797,22 +797,6 @@ public class App extends JFrame {
         }
     }
 
-    private void createTable(String str) {
-        if (str.equals("customers")) {
-            tTable.setModel(new DefaultTableModel(
-                    null,
-                    new String[]{"ID", "Surname", "Name", "Father Name", "Birthday", "Street", "Building", "Apartments", "City", "Phone Number"}
-            ));
-        } else if (str.equals("employees")) {
-
-        } else if (str.equals("medicines")) {
-
-        } else if (str.equals("orders")) {
-
-        } else {
-
-        }
-    }
 
     public App() {
         loginButton.addActionListener(new ActionListener() {
@@ -824,7 +808,6 @@ public class App extends JFrame {
                 if (login.equals("admin") && password.equals("111111")) {
                     cl.show(panel1, "TableCard");
                     customersButton.setBackground(new Color(103, 34, 97));
-                    createTable("customers");
                     try {
                         connectDB();
                         viewCustomers();
@@ -846,7 +829,6 @@ public class App extends JFrame {
                 ordersButton.setBackground(new Color(156, 78, 151));
                 prescriptionsButton.setBackground(new Color(156, 78, 151));
                 customersButton.setBackground(new Color(103, 34, 97));
-                createTable("customers");
                 try {
                     connectDB();
                     viewCustomers();
@@ -866,7 +848,6 @@ public class App extends JFrame {
                 ordersButton.setBackground(new Color(156, 78, 151));
                 prescriptionsButton.setBackground(new Color(156, 78, 151));
                 employeesButton.setBackground(new Color(103, 34, 97));
-                createTable("employees");
                 try {
                     connectDB();
                     viewEmployees();
@@ -886,7 +867,6 @@ public class App extends JFrame {
                 ordersButton.setBackground(new Color(156, 78, 151));
                 prescriptionsButton.setBackground(new Color(156, 78, 151));
                 medicinesButton.setBackground(new Color(103, 34, 97));
-                createTable("medicines");
                 try {
                     connectDB();
                     viewMedicines();
@@ -906,7 +886,6 @@ public class App extends JFrame {
                 employeesButton.setBackground(new Color(156, 78, 151));
                 prescriptionsButton.setBackground(new Color(156, 78, 151));
                 ordersButton.setBackground(new Color(103, 34, 97));
-                createTable("orders");
                 try {
                     connectDB();
                     viewOrders();
@@ -926,7 +905,6 @@ public class App extends JFrame {
                 ordersButton.setBackground(new Color(156, 78, 151));
                 employeesButton.setBackground(new Color(156, 78, 151));
                 prescriptionsButton.setBackground(new Color(103, 34, 97));
-                createTable("prescriptions");
                 try {
                     connectDB();
                     viewPrescriptions();

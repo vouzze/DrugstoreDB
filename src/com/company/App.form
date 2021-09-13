@@ -147,7 +147,7 @@
           <maximumSize width="1920" height="1080"/>
           <minimumSize width="100" height="100"/>
           <preferredSize width="500" height="500"/>
-          <visible value="false"/>
+          <visible value="true"/>
         </properties>
         <border type="none"/>
         <children>
