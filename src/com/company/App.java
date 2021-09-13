@@ -12,7 +12,7 @@ import java.sql.*;
 public class App extends JFrame {
     private JButton loginButton;
     private JPanel panel1;
-    private JTextField loginField;
+    private JTextField usernameField;
     private JPasswordField passwordField;
     private JButton customersButton;
     private JTable tTable;
@@ -802,10 +802,10 @@ public class App extends JFrame {
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String login = loginField.getText();
+                String username = usernameField.getText();
                 String password = passwordField.getText();
                 loginButton.setFocusPainted(false);
-                if (login.equals("admin") && password.equals("111111")) {
+                if (username.equals("admin") && password.equals("111111")) {
                     cl.show(panel1, "TableCard");
                     customersButton.setBackground(new Color(103, 34, 97));
                     try {
