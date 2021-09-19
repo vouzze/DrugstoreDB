@@ -78,7 +78,7 @@ public class App extends JFrame {
 
         String url = "jdbc:mysql://localhost:3306/harniuk";
         String username = "root";
-        String password = "111111";
+        String password = "";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
