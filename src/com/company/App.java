@@ -205,15 +205,13 @@ public class App extends JFrame {
             pst.setString(7, salary);
             pst.executeUpdate();
             JOptionPane.showMessageDialog(null, "Employees are updated!");
-            cSurname.setText("");
-            cName.setText("");
-            cFathername.setText("");
-            cBirthday.setText("");
-            cStreet.setText("");
-            cBuilding.setText("");
-            cApartments.setText("");
-            cCity.setText("");
-            cPhonenumber.setText("");
+            eSurname.setText("");
+            eName.setText("");
+            eFathername.setText("");
+            ePosition.setText("");
+            eBirthday.setText("");
+            ePhonenumber.setText("");
+            eSalary.setText("");
         } catch (SQLException e1) {
 
             e1.printStackTrace();
